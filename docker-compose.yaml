@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  client:
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    restart: on-failure
+
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WEATHER_API_CLIENT_KEY=1a3aa8f89e8767940fd3e0c64833c4cc
+    restart: on-failure
