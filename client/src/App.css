@@ -1,0 +1,167 @@
+
+html, body, #root, .App {
+    position:fixed;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("https://wallpapercave.com/wp/wp2894284.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HomePage {
+    background:rgba(255,255,255,0.5);
+    justify-content: center;
+    width: 30%;
+    height: 60%;
+    margin: 10% 0% 0% 35%;
+    border-radius: 10px;
+}
+
+.settings {
+    padding: 5% 10% 10% 10%;
+    width: 80%;
+    height: 20%;
+    border-radius: 10px 10px 0px 0px;
+    background:rgb(24, 24, 24);
+}
+
+.Choosecity {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.2px;
+    word-spacing: 0px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}    .select select {
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 10px;
+        background: #2e2e2e;
+        color: #7b7b7b;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: #000000;
+            background: #cccccc;
+        }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #7b7b7b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+.ServerError {
+    font-family: Impact, Charcoal, sans-serif;
+    margin: 20% 0% 0% 0%;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    word-spacing: 0px;
+    color: #2D2D2D;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.MeteoInfo {
+    margin: 5% 0% 0% 5%;
+}
+
+.MeteoCity {
+    margin: 0%;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    letter-spacing: -0.6px;
+    word-spacing: 0px;
+    color: #2D2D2D;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.MeteoWeather {
+    margin: 0%;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.6px;
+    word-spacing: 0px;
+    color: #2D2D2D;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.MeteoTemp {
+    float: left;
+    margin: 20% 0% 0% 0%;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 70px;
+    letter-spacing: -0.6px;
+    word-spacing: 0px;
+    color: #2D2D2D;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.MeteoImg {
+    margin-left: 15%;
+    margin-top: 0%;
+    background-color: rgb(24, 24, 24);
+    border-radius: 100px;
+}
