@@ -1,7 +1,5 @@
 ## MeteoApp with a call to an API
 
-
-## With Docker
 ## Installation
 You need to install docker compose -> https://github.com/Yelp/docker-compose/blob/master/docs/install.md
 ### `Start with Docker compose`
